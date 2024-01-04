@@ -37,9 +37,15 @@ class Nav {
       binding: SplashControllerBinding(),
     ),
     GetPage(
-      name: Routes.ONBOARDING,
-      page: () => const OnboardingScreen(),
+      name: Routes.WALKTHROUGH,
+      page: () => const WalkthroughScreen(),
       binding: OnboardingControllerBinding(),
+      transition: Transition.rightToLeft,
+    ),
+    GetPage(
+      name: Routes.WELCOME,
+      page: () => const WelcomeScreen(),
+      binding: WelcomeControllerBinding(),
       transition: Transition.rightToLeft,
     ),
   ];

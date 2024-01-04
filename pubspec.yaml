@@ -20,5 +20,20 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/splash/
+    - assets/images/splash/
+    - assets/images/walkthrough/
+  
+  fonts:
+    - family: Overpass
+      fonts:
+        - asset: assets/fonts/overpass/Overpass-Light.ttf
+          weight: 300
+        - asset: assets/fonts/overpass/Overpass-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/overpass/Overpass-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/overpass/Overpass-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/overpass/Overpass-Bold.ttf
+          weight: 700
 

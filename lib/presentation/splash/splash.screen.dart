@@ -14,12 +14,12 @@ class SplashScreen extends GetView<SplashController> {
           Positioned.fill(
             bottom: 0,
             child: Image.asset(
-              "assets/splash/background.png",
+              "assets/images/splash/background.png",
               fit: BoxFit.fill,
             ),
           ),
           Center(
-            child: Image.asset("assets/splash/logo.png"),
+            child: Image.asset("assets/images/splash/logo.png"),
           ),
         ],
       ),

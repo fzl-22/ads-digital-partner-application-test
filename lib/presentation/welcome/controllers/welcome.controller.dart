@@ -1,7 +1,8 @@
+// ignore_for_file: unnecessary_overrides
+
 import 'package:get/get.dart';
 
-class OnboardingController extends GetxController {
-  //TODO: Implement OnboardingController
+class WelcomeController extends GetxController {
 
   final count = 0.obs;
   @override

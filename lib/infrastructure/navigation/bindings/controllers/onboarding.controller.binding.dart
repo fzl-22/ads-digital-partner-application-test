@@ -1,12 +1,12 @@
 import 'package:get/get.dart';
 
-import '../../../../presentation/onboarding/controllers/onboarding.controller.dart';
+import '../../../../presentation/walkthrough/controllers/walkthrough.controller.dart';
 
 class OnboardingControllerBinding extends Bindings {
   @override
   void dependencies() {
-    Get.lazyPut<OnboardingController>(
-      () => OnboardingController(),
+    Get.lazyPut<WalkthroughController>(
+      () => WalkthroughController(),
     );
   }
 }

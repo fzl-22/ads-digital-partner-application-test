@@ -9,9 +9,9 @@ class SplashController extends GetxController {
   @override
   void onReady() {
     super.onReady();
-    _exitSplashScreen(direction: Routes.ONBOARDING);
+    _exitSplashScreen(direction: Routes.WALKTHROUGH);
   }
-  
+
   Future<void> _exitSplashScreen({
     required String direction,
   }) async {
