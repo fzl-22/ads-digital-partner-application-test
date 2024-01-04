@@ -2,20 +2,20 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import 'controllers/home.controller.dart';
+import 'controllers/splash.controller.dart';
 
-class HomeScreen extends GetView<HomeController> {
-  const HomeScreen({super.key});
+class SplashScreen extends GetView<SplashController> {
+  const SplashScreen({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('HomeScreen'),
+        title: const Text('SplashScreen'),
         centerTitle: true,
       ),
       body: const Center(
         child: Text(
-          'HomeScreen is working',
+          'SplashScreen is working',
           style: TextStyle(fontSize: 20),
         ),
       ),
