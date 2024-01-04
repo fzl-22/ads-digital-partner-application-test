@@ -60,5 +60,11 @@ class Nav {
       binding: RegisterControllerBinding(),
       transition: Transition.leftToRight,
     ),
+    GetPage(
+      name: Routes.VERIFICATION,
+      page: () => const VerificationScreen(),
+      binding: VerificationControllerBinding(),
+      transition: Transition.rightToLeft,
+    ),
   ];
 }

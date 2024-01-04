@@ -4,3 +4,4 @@ export 'package:ads_digital_partner_application_test/infrastructure/navigation/b
 export 'package:ads_digital_partner_application_test/infrastructure/navigation/bindings/controllers/register.controller.binding.dart'; 
 export 'package:ads_digital_partner_application_test/infrastructure/navigation/bindings/controllers/splash.controller.binding.dart'; 
 export 'package:ads_digital_partner_application_test/infrastructure/navigation/bindings/controllers/welcome.controller.binding.dart'; 
+export 'package:ads_digital_partner_application_test/infrastructure/navigation/bindings/controllers/verification.controller.binding.dart';

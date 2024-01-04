@@ -39,7 +39,7 @@ class ActionButton extends StatelessWidget {
         style: TextButton.styleFrom(
           foregroundColor: Get.theme.colorScheme.tertiary,
           textStyle: Get.theme.textTheme.titleSmall,
-          padding: const EdgeInsets.all(16)
+          padding: const EdgeInsets.all(14)
         ),
         onPressed: onPressed,
         child: label,
@@ -64,7 +64,7 @@ class ActionButton extends StatelessWidget {
             useIcon ? const Color(0xFF474b75) : Get.theme.colorScheme.onPrimary,
         shadowColor: Colors.transparent,
         surfaceTintColor: Colors.transparent,
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(14),
       ),
       onPressed: onPressed,
       child: useIcon

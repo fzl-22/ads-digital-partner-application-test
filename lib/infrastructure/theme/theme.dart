@@ -4,6 +4,10 @@ class AppTheme {
   static final _theme = ThemeData(
     fontFamily: 'Overpass',
     textTheme: const TextTheme(
+      displayMedium: TextStyle(
+        fontSize: 24,
+        fontWeight: FontWeight.w400,
+      ),
       titleLarge: TextStyle(
         fontSize: 24,
         fontWeight: FontWeight.bold,
@@ -18,6 +22,14 @@ class AppTheme {
       ),
       bodyLarge: TextStyle(
         fontSize: 16,
+        fontWeight: FontWeight.normal,
+      ),
+      bodyMedium: TextStyle(
+        fontSize: 14,
+        fontWeight: FontWeight.normal,
+      ),
+      bodySmall: TextStyle(
+        fontSize: 14,
         fontWeight: FontWeight.normal,
       ),
       labelLarge: TextStyle(

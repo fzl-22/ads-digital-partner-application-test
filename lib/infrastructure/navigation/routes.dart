@@ -11,4 +11,5 @@ class Routes {
   static const WALKTHROUGH = '/walkthrough';
   static const WELCOME = '/welcome';
   static const REGISTER = '/register';
+  static const VERIFICATION = '/register/verification';
 }

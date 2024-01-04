@@ -8,6 +8,7 @@ environment:
 dependencies: 
   cupertino_icons: ^1.0.2
   get: 4.6.6
+  lottie: 2.7.0
   flutter: 
     sdk: flutter
 
@@ -18,15 +19,15 @@ dev_dependencies:
 
 flutter: 
   uses-material-design: true
-
-  assets:
+  assets: 
     - assets/images/splash/
     - assets/images/walkthrough/
     - assets/images/welcome/
-  
-  fonts:
+    - assets/icons/
+    - assets/animations/
+  fonts: 
     - family: Overpass
-      fonts:
+      fonts: 
         - asset: assets/fonts/overpass/Overpass-Light.ttf
           weight: 300
         - asset: assets/fonts/overpass/Overpass-Regular.ttf
@@ -37,4 +38,8 @@ flutter:
           weight: 600
         - asset: assets/fonts/overpass/Overpass-Bold.ttf
           weight: 700
+    - family: Sofia Pro
+      fonts: 
+        - asset: assets/fonts/sofiapro/sofiapro-light.otf
+          weight: 300
 
