@@ -6,7 +6,9 @@ class Routes {
   }
 
   static const HOME = '/home';
+  static const LOGIN = '/login';
   static const SPLASH = '/splash';
   static const WALKTHROUGH = '/walkthrough';
   static const WELCOME = '/welcome';
+  static const REGISTER = '/register';
 }

@@ -22,6 +22,7 @@ flutter:
   assets:
     - assets/images/splash/
     - assets/images/walkthrough/
+    - assets/images/welcome/
   
   fonts:
     - family: Overpass

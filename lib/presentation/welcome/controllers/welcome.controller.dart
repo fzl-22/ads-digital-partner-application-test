@@ -1,24 +1,14 @@
 // ignore_for_file: unnecessary_overrides
 
+import 'package:ads_digital_partner_application_test/infrastructure/navigation/routes.dart';
 import 'package:get/get.dart';
 
 class WelcomeController extends GetxController {
-
-  final count = 0.obs;
-  @override
-  void onInit() {
-    super.onInit();
+  void onNavigateToLogin() {
+    Get.toNamed(Routes.LOGIN);
   }
 
-  @override
-  void onReady() {
-    super.onReady();
+  void onNavigateToRegister() {
+    Get.toNamed(Routes.REGISTER);
   }
-
-  @override
-  void onClose() {
-    super.onClose();
-  }
-
-  void increment() => count.value++;
 }

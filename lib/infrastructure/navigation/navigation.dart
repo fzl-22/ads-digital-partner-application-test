@@ -48,5 +48,17 @@ class Nav {
       binding: WelcomeControllerBinding(),
       transition: Transition.rightToLeft,
     ),
+    GetPage(
+      name: Routes.LOGIN,
+      page: () => const LoginScreen(),
+      binding: LoginControllerBinding(),
+      transition: Transition.leftToRight,
+    ),
+    GetPage(
+      name: Routes.REGISTER,
+      page: () => const RegisterScreen(),
+      binding: RegisterControllerBinding(),
+      transition: Transition.leftToRight,
+    ),
   ];
 }
