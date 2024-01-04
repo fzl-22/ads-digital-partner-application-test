@@ -1,24 +1,21 @@
 // ignore_for_file: unnecessary_overrides
 
+import 'dart:async';
+
+import 'package:ads_digital_partner_application_test/infrastructure/navigation/routes.dart';
 import 'package:get/get.dart';
 
 class SplashController extends GetxController {
-
-  final count = 0.obs;
-  @override
-  void onInit() {
-    super.onInit();
-  }
-
   @override
   void onReady() {
     super.onReady();
+    _exitSplashScreen(direction: Routes.ONBOARDING);
   }
-
-  @override
-  void onClose() {
-    super.onClose();
+  
+  Future<void> _exitSplashScreen({
+    required String direction,
+  }) async {
+    await Future.delayed(const Duration(seconds: 3));
+    Get.offAllNamed(direction, );
   }
-
-  void increment() => count.value++;
 }
