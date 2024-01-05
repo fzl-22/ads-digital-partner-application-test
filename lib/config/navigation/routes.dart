@@ -17,4 +17,5 @@ class Routes {
   static const WALKTHROUGH = '/walkthrough';
   static const WELCOME = '/welcome';
   static const PROFILE = '/profile';
+  static const CATEGORY = '/category';
 }

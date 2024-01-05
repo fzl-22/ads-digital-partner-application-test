@@ -1,3 +1,5 @@
+import 'package:ads_digital_partner_application_test/config/navigation/bindings/controllers/category.controller.binding.dart';
+import 'package:ads_digital_partner_application_test/features/category/category.screen.dart';
 import 'package:ads_digital_partner_application_test/features/profile/presentation/pages/profile.screen.dart';
 import 'package:ads_digital_partner_application_test/features/register/presentation/pages/register.screen.dart';
 import 'package:ads_digital_partner_application_test/features/register/presentation/pages/verification.screen.dart';
@@ -89,6 +91,7 @@ class Nav {
       name: Routes.ADD,
       page: () => const AddScreen(),
       binding: AddControllerBinding(),
+
     ),
     GetPage(
       name: Routes.CART,
@@ -99,6 +102,12 @@ class Nav {
       name: Routes.PROFILE,
       page: () => const ProfileScreen(),
       binding: ProfileControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.CATEGORY,
+      page: () => const CategoryScreen(),
+      binding: CategoryControllerBinding(),
+      transition: Transition.rightToLeft,
     ),
   ];
 }

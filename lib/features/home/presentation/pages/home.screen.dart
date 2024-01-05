@@ -1,3 +1,4 @@
+import 'package:ads_digital_partner_application_test/config/navigation/routes.dart';
 import 'package:ads_digital_partner_application_test/features/home/presentation/widgets/category_card.dart';
 import 'package:ads_digital_partner_application_test/features/home/presentation/widgets/product_card.dart';
 import 'package:ads_digital_partner_application_test/features/home/presentation/widgets/profile_container.dart';
@@ -70,7 +71,14 @@ class HomeScreen extends GetView<HomeController> {
                 itemBuilder: (context, index) {
                   return CategoryCard(
                     category: controller.categories[index],
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.toNamed(
+                        Routes.CATEGORY,
+                        arguments: [
+                          controller.categories[index].title,
+                        ],
+                      );
+                    },
                   );
                 },
                 itemCount: controller.categories.length,
