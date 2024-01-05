@@ -75,7 +75,7 @@ class RegisterScreen extends GetView<RegisterController> {
                   height: 48,
                 ),
                 ActionButton(
-                  label: const Text("SIGN IN"),
+                  label: const Text("CREATE ACCOUNT"),
                   onPressed: controller.onRegister,
                 ),
                 const SizedBox(
