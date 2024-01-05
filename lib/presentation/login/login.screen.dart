@@ -1,4 +1,4 @@
-import 'package:ads_digital_partner_application_test/presentation/register/widgets/auth_link_button.dart';
+import 'package:ads_digital_partner_application_test/presentation/shared/widgets/auth_link_button.dart';
 import 'package:ads_digital_partner_application_test/presentation/shared/widgets/action_button.dart';
 import 'package:ads_digital_partner_application_test/presentation/shared/widgets/text_input_field.dart';
 import 'package:flutter/material.dart';
