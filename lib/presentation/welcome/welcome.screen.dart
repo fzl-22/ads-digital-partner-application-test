@@ -9,6 +9,7 @@ class WelcomeScreen extends GetView<WelcomeController> {
   const WelcomeScreen({super.key});
   @override
   Widget build(BuildContext context) {
+    final orientation = MediaQuery.of(context).orientation;
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
@@ -17,16 +18,18 @@ class WelcomeScreen extends GetView<WelcomeController> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Container(
-                  padding: const EdgeInsets.all(36),
-                  child: Image.asset(
-                    "assets/images/welcome/welcome.png",
-                    alignment: Alignment.center,
+                if (orientation == Orientation.portrait)
+                  Container(
+                    padding: const EdgeInsets.all(36),
+                    child: Image.asset(
+                      "assets/images/welcome/welcome.png",
+                      alignment: Alignment.center,
+                    ),
                   ),
-                ),
-                const SizedBox(
-                  height: 24,
-                ),
+                if (orientation == Orientation.portrait)
+                  const SizedBox(
+                    height: 24,
+                  ),
                 Text(
                   "Welcome to Apotech",
                   style: Get.theme.textTheme.titleLarge,

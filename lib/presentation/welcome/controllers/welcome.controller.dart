@@ -1,5 +1,3 @@
-// ignore_for_file: unnecessary_overrides
-
 import 'package:ads_digital_partner_application_test/infrastructure/navigation/routes.dart';
 import 'package:get/get.dart';
 

@@ -15,14 +15,16 @@ class OnboardingContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final deviceOrientation = MediaQuery.of(context).orientation;
     return Container(
       padding: const EdgeInsets.all(64),
       child: Column(
         children: [
-          Image.asset(
-            image,
-            alignment: Alignment.center,
-          ),
+          if (deviceOrientation == Orientation.portrait)
+            Image.asset(
+              image,
+              alignment: Alignment.center,
+            ),
           const SizedBox(
             height: 48,
           ),
