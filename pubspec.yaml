@@ -22,6 +22,7 @@ flutter:
     - assets/images/splash/
     - assets/images/walkthrough/
     - assets/images/welcome/
+    - assets/images/profile/
     - assets/icons/
     - assets/animations/
   fonts: 
@@ -36,6 +37,16 @@ flutter:
         - asset: assets/fonts/overpass/Overpass-SemiBold.ttf
           weight: 600
         - asset: assets/fonts/overpass/Overpass-Bold.ttf
+          weight: 700
+    - family: Hanken Grotesk
+      fonts: 
+        - asset: assets/fonts/hanken-grotesk/HankenGrotesk-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/hanken-grotesk/HankenGrotesk-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/hanken-grotesk/HankenGrotesk-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/hanken-grotesk/HankenGrotesk-Bold.ttf
           weight: 700
     - family: Sofia Pro
       fonts: 
