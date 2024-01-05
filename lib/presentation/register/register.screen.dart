@@ -55,11 +55,21 @@ class RegisterScreen extends GetView<RegisterController> {
                 const SizedBox(
                   height: 12,
                 ),
-                TextInputField.password(
-                  controller: controller.passwordController.value,
-                  label: const Text("Password"),
-                  keyboardType: TextInputType.visiblePassword,
-                  validator: controller.validatePassword,
+                Obx(
+                  () => TextInputField.password(
+                    controller: controller.passwordController.value,
+                    label: const Text("Password"),
+                    keyboardType: TextInputType.visiblePassword,
+                    validator: controller.validatePassword,
+                    suffixIcon: Icon(
+                      controller.isVisible.value
+                          ? Icons.visibility_off_outlined
+                          : Icons.visibility_outlined,
+                      color: Get.theme.colorScheme.tertiary,
+                    ),
+                    isVisible: controller.isVisible.value,
+                    onSuffixPressed: controller.toggleVisibility,
+                  ),
                 ),
                 const SizedBox(
                   height: 48,

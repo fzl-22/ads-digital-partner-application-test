@@ -8,6 +8,7 @@ class TextInputField extends StatelessWidget {
     required this.label,
     required this.keyboardType,
     required this.validator,
+    this.isVisible = true,
     this.prefixIcon,
     this.suffixIcon,
     this.onSuffixPressed,
@@ -19,6 +20,7 @@ class TextInputField extends StatelessWidget {
     required this.label,
     required this.keyboardType,
     required this.validator,
+    this.isVisible = false,
     this.prefixIcon,
     this.suffixIcon,
     this.onSuffixPressed,
@@ -29,6 +31,7 @@ class TextInputField extends StatelessWidget {
   final TextInputType keyboardType;
   final String? Function(String?) validator;
   final bool isPassword;
+  final bool isVisible;
   final Widget? prefixIcon;
   final Widget? suffixIcon;
   final VoidCallback? onSuffixPressed;
@@ -38,7 +41,7 @@ class TextInputField extends StatelessWidget {
     return TextFormField(
       controller: controller,
       keyboardType: keyboardType,
-      obscureText: isPassword,
+      obscureText: isPassword && !isVisible,
       validator: validator,
       decoration: InputDecoration(
         label: label,

@@ -8,6 +8,7 @@ class RegisterController extends GetxController {
   final mobilePhoneController = TextEditingController().obs;
   final emailController = TextEditingController().obs;
   final passwordController = TextEditingController().obs;
+  final isVisible = false.obs;
 
   String? validateName(String? username) {
     if (username == null || username.trim().isEmpty) {
@@ -65,6 +66,10 @@ class RegisterController extends GetxController {
     }
 
     return null;
+  }
+
+  void toggleVisibility() {
+    isVisible.value = !isVisible.value;
   }
 
   void onRegister() {
