@@ -30,7 +30,7 @@ class LoginController extends GetxController {
 
     formKey.value.currentState!.save();
 
-    Get.offAllNamed(Routes.HOME);
+    Get.offAllNamed(Routes.ROOT);
   }
 
   void onNavigateToRegister() {

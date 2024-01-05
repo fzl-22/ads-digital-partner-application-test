@@ -66,5 +66,35 @@ class Nav {
       binding: VerificationControllerBinding(),
       transition: Transition.rightToLeft,
     ),
+    GetPage(
+      name: Routes.ROOT,
+      page: () => const RootScreen(),
+      binding: RootControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.HOME,
+      page: () => const HomeScreen(),
+      binding: HomeControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.NOTIFICATION,
+      page: () => const NotificationScreen(),
+      binding: NotificationControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.ADD,
+      page: () => const AddScreen(),
+      binding: AddControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.CART,
+      page: () => const CartScreen(),
+      binding: CartControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.PROFILE,
+      page: () => const ProfileScreen(),
+      binding: ProfileControllerBinding(),
+    ),
   ];
 }

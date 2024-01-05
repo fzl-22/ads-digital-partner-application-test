@@ -34,7 +34,7 @@ class LoginScreen extends GetView<LoginController> {
                   keyboardType: TextInputType.name,
                   validator: controller.validateUsername,
                   prefixIcon: const ImageIcon(
-                    AssetImage("assets/icons/profile.png"),
+                    AssetImage("assets/icons/person.png"),
                   ),
                 ),
                 const SizedBox(

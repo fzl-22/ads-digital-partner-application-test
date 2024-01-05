@@ -18,7 +18,6 @@ dev_dependencies:
     sdk: flutter
 
 flutter: 
-  uses-material-design: true
   assets: 
     - assets/images/splash/
     - assets/images/walkthrough/
@@ -42,4 +41,5 @@ flutter:
       fonts: 
         - asset: assets/fonts/sofiapro/sofiapro-light.otf
           weight: 300
+  uses-material-design: true
 
