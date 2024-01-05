@@ -26,19 +26,17 @@ class NavigationBarItem extends StatelessWidget {
           ),
         ),
         onPressed: onPressed,
-        icon: ImageIcon(
-          AssetImage(icon),
-        ),
+        icon: Image.asset(icon),
       );
     }
 
     return IconButton(
       onPressed: onPressed,
-      icon: ImageIcon(
-        AssetImage(icon),
-        color: isActive
-            ? Get.theme.colorScheme.primary
-            : Get.theme.colorScheme.tertiary,
+      icon: Image.asset(
+        icon,
+        width: 24,
+        height: 24,
+        color: isActive ? Get.theme.colorScheme.primary : null,
       ),
     );
   }

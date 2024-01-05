@@ -15,12 +15,13 @@ class RootController extends GetxController {
 
   void animateToPage(int index) {
     setActiveIndex(index);
-    pageController.value.animateToPage(
+    pageController.value.jumpToPage(
       index,
-      duration: const Duration(
-        milliseconds: 300,
-      ), // Adjust the duration as needed
-      curve: Curves.easeInOut, // Adjust the curve as needed
+
+      // duration: const Duration(
+      //   milliseconds: 300,
+      // ), // Adjust the duration as needed
+      // curve: Curves.easeInOut, // Adjust the curve as needed
     );
   }
 }
