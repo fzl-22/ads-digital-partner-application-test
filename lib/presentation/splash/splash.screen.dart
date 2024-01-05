@@ -19,7 +19,10 @@ class SplashScreen extends GetView<SplashController> {
             ),
           ),
           Center(
-            child: Image.asset("assets/images/splash/logo.png"),
+            child: Image.asset(
+              "assets/images/splash/logo.png",
+              height: 124,
+            ),
           ),
         ],
       ),
