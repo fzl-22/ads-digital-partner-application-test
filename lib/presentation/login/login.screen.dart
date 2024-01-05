@@ -1,3 +1,4 @@
+import 'package:ads_digital_partner_application_test/presentation/register/widgets/auth_link_button.dart';
 import 'package:ads_digital_partner_application_test/presentation/shared/widgets/action_button.dart';
 import 'package:ads_digital_partner_application_test/presentation/shared/widgets/text_input_field.dart';
 import 'package:flutter/material.dart';
@@ -64,29 +65,9 @@ class LoginScreen extends GetView<LoginController> {
                 const SizedBox(
                   height: 48,
                 ),
-                GestureDetector(
+                AuthLinkButton(
+                  text: "Don't have an account? Sign Up",
                   onTap: controller.onNavigateToRegister,
-                  child: Text(
-                    "Don't have an account? Sign Up",
-                    style: Get.textTheme.bodyMedium!.copyWith(
-                      fontFamily: 'Sofia Pro',
-                      fontWeight: FontWeight.w300,
-                      color: Get.theme.colorScheme.tertiary,
-                      shadows: [
-                        Shadow(
-                          color: Colors.grey
-                              .withAlpha(128), // Choose the color of the shadow
-                          blurRadius:
-                              8.0, // Adjust the blur radius for the shadow effect
-                          offset: const Offset(
-                            -2.0,
-                            2.0,
-                          ), // Set the horizontal and vertical offset for the shadow
-                        ),
-                      ],
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
                 ),
               ],
             ),
