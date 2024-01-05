@@ -1,5 +1,5 @@
 import 'package:ads_digital_partner_application_test/config/navigation/bindings/controllers/category.controller.binding.dart';
-import 'package:ads_digital_partner_application_test/features/category/category.screen.dart';
+import 'package:ads_digital_partner_application_test/features/category/presentation/pages/category.screen.dart';
 import 'package:ads_digital_partner_application_test/features/profile/presentation/pages/profile.screen.dart';
 import 'package:ads_digital_partner_application_test/features/register/presentation/pages/register.screen.dart';
 import 'package:ads_digital_partner_application_test/features/register/presentation/pages/verification.screen.dart';
