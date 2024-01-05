@@ -23,6 +23,7 @@ flutter:
     - assets/images/walkthrough/
     - assets/images/welcome/
     - assets/images/profile/
+    - assets/images/home/
     - assets/icons/
     - assets/animations/
   fonts: 

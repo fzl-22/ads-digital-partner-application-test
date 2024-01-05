@@ -1,10 +1,10 @@
-import 'package:ads_digital_partner_application_test/infrastructure/theme/theme.dart';
+import 'package:ads_digital_partner_application_test/config/theme/theme.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import 'infrastructure/navigation/navigation.dart';
-import 'infrastructure/navigation/routes.dart';
+import 'config/navigation/navigation.dart';
+import 'config/navigation/routes.dart';
 
 void main() async {
   var initialRoute = await Routes.initialRoute;
